@@ -1,25 +1,23 @@
-import logo from './logo.svg';
-import './App.css';
+import { BrowserRouter as Router, Route ,Routes} from "react-router-dom";
+import Login from "./components/views/Login";
+import StepOne from "./components/views/StepOne";
+import StepTwo from "./components/views/StepTwo";
+import StepThree from "./components/views/StepThree";
 
-function App() {
+
+
+const  Auth = () => {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Router>
+      <Routes>
+      <Route  path='/login' exact element={<Login/> } />
+      <Route  path='/step3' exact element={ <StepThree/>} />
+      <Route  path='/step2' exact element={ <StepTwo/>} />
+      <Route  path='/' exact element={ <StepOne/>} />
+      </Routes>
+  </Router>
+
   );
 }
 
-export default App;
+export default Auth;

@@ -1,0 +1,180 @@
+@import "./variables";
+
+@import '~@fortawesome/fontawesome-free/css/all.css';
+@import '~bootstrap/scss/bootstrap.scss';
+
+
+
+html,
+body,
+#root {
+    height: 100%;
+	margin: 0px;
+	padding: 0px;
+}
+select.input-lg {
+	-webkit-appearance: none;
+	-moz-appearance: none;
+	-o-appearance: none;
+	width: 50%;
+	
+  }
+  
+  select + i.fa {
+	float: right;
+	margin-top: -29px;
+	margin-right: 5px;
+	pointer-events: none;
+	background-color: #fff;
+	color: #000;
+	padding-right: 51%;
+	padding-bottom: 5px;
+  }
+
+
+.btn {
+
+    &:focus,
+    &:active {
+        outline: none !important;
+        box-shadow: none !important;
+    }
+}
+
+a {
+
+    &:focus,
+    &:active {
+        outline: none !important;
+        box-shadow: none !important;
+    }
+}
+
+.auth{
+	.auth-background-holder {
+		height: 100vh;
+		min-height: 100%;
+		color: #fff;
+	}
+
+}
+.auth-wrapper{
+	background-color: black;
+}
+.auth-form-container{
+	width: 100%;
+}
+.auth-main-col, .auth-background-col{
+	position: relative;
+}
+
+.auth-main-col {
+	margin: auto;
+	margin-bottom: 400px;
+	
+}
+.caret{
+    color: red;
+}
+
+
+.auth-background-col {
+	background: rgba($theme-text-color-primary, 0.9);
+}
+
+.auth-background-mask {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	left: 0;
+	top: 0;
+	z-index: 10;
+	background: rgba(0, 0, 0, 0.1);
+}
+
+.auth-wrapper {
+	background: white;
+	height: 100vh;
+	
+	.auth-body {
+		width: 260px;
+		padding: 20px;
+	}
+	
+	.col-lg-4 {
+		flex: 0 0 auto;
+		width: 35%;
+	}
+	.auth-heading {
+		font-size: 1.5rem;
+	}
+	
+	.auth-option {
+		font-size: 0.875rem;
+		> a {
+			color: $theme-text-color-secondary
+		}
+	}
+
+	.forgot-password {
+		> a {
+			color: $theme-text-color-secondary
+		}
+	}
+
+	input:focus {
+		box-shadow: none;
+		width: 100%;
+	}
+}
+
+/* -----------
+responsive-------- */
+
+    
+// X-Small devices (portrait phones, less than 576px)
+@media (max-width: 575.98px) { 
+    body {
+        overflow-x: hidden !important;
+
+      /*  font-family: 'Montserrat Alternates', sans-serif;
+        overflow-x: hidden;
+        background-color: #ffffff;
+        line-height: 1.5;
+        font-size: 16px;
+        font-weight: 400;*/
+    }
+    .container {
+        max-width: 100% !important;
+        overflow-x: hidden !important;
+    }
+
+   
+
+
+
+    
+}
+
+// Small devices (landscape phones, less than 768px)
+@media (max-width: 767.98px) { 
+    
+ }
+
+// Medium devices (tablets, less than 992px)
+@media (max-width: 991.98px) { 
+    
+ }
+
+// Large devices (desktops, less than 1200px)
+@media (max-width: 1199.98px) { 
+    
+ }
+
+// X-Large devices (large desktops, less than 1400px)
+@media (max-width: 1399.98px) { 
+    
+ }
+
+// XX-Large devices (larger desktops)
+// No media query since the xxl breakpoint has no upper bound on its width
